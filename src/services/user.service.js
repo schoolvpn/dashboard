@@ -35,7 +35,7 @@ function login (email, password) {
     body: JSON.stringify({ email, password })
   }
 
-  return fetch(`http://192.168.0.14:8081/user/login`, requestOptions)
+  return fetch(`http://localhost:8081/user/login`, requestOptions)
     .then(handleResponse)
     .then(user => {
       // login successful if there's a jwt token in the response
@@ -55,7 +55,7 @@ function profilePut (picture, firstname, lastname) {
     body: JSON.stringify({ picture, firstname, lastname })
   }
 
-  return fetch(`http://192.168.0.14:8081/user/me`, requestOptions)
+  return fetch(`http://localhost:8081/user/me`, requestOptions)
     .then(handleResponse)
     .then(console.log('works'))
     .then()
@@ -66,7 +66,7 @@ function storeaccountinfo () {
     method: 'GET',
     headers: authHeader()
   }
-  return fetch(`http://192.168.0.14:8081/user/me`, requestOptions)
+  return fetch(`http://localhost:8081/user/me`, requestOptions)
     .then(handleResponse)
     .then(accountinfo => {
       localStorage.setItem('accountinfo', JSON.stringify(accountinfo))
@@ -85,7 +85,7 @@ function getAll () {
     headers: authHeader()
   }
 
-  return fetch(`http://192.168.0.14:8081/user/me`, requestOptions).then(handleResponse)
+  return fetch(`http://localhost:8081/user/me`, requestOptions).then(handleResponse)
 }
 
 function profileMe () {
@@ -94,7 +94,7 @@ function profileMe () {
     headers: authHeader()
   }
 
-  return fetch(`http://192.168.0.14:8081/user/me`, requestOptions).then(handleResponse)
+  return fetch(`http://localhost:8081/user/me`, requestOptions).then(handleResponse)
 }
 
 function handleResponse (response) {

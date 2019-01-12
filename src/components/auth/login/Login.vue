@@ -50,9 +50,9 @@ export default {
           if (username && password) {
               dispatch('authentication/login', { username, password });
           }
-          if (localStorage.getItem('user') != null) {
-            this.$router.push('/dashboard')
-          }
+          // if (localStorage.getItem('user') != null) {
+          //   this.$router.push('/dashboard')
+          // }
       }
   }
 }
