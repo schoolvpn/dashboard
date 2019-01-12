@@ -1,30 +1,14 @@
-# dashboard
+# SchoolVPN Admin Dashboard
 
-> SchoolVPN Dashboard
+Based on Vuestic
 
-## Build Setup
+## Dev
+1. npm install
 
-``` bash
-# install dependencies
-npm install
+2. npm run serve
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Prod
 
-# build for production with minification
-npm run build
+1. npm install
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+2. npm run build
