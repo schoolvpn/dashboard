@@ -39,7 +39,7 @@ export default {
       type: Array,
       default: () => [
         {
-          code: 'gb',
+          code: 'ca',
           name: 'english',
         },
       ],
@@ -51,7 +51,7 @@ export default {
     },
 
     currentLanguage () {
-      return Vue.i18n.locale() === 'en' ? 'gb' : Vue.i18n.locale()
+      return Vue.i18n.locale() === 'en' ? 'ca' : Vue.i18n.locale()
     },
 
     flagIconClass (code) {
