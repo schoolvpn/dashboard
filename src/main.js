@@ -31,6 +31,14 @@ router.beforeEach((to, from, next) => {
   if (authRequired && !loggedIn) {
     return next('/auth/login')
   }
+  if (loggedIn) {
+    if (JSON.parse(loggedIn).role != "admin") {
+      return next('/auth/login')
+    }
+  }
+  // else if (JSON.parse(loggedIn).role != "admin") {
+  //   return next('/auth/login')
+  // }
   next()
 })
 

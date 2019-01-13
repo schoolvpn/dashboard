@@ -16,8 +16,16 @@ export const authentication = {
       userService.login(username, password)
         .then(
           user => {
-            commit('loginSuccess', user)
-            router.push('/dashboard')
+            if (JSON.parse(localStorage.accountinfo).role === "admin") {
+              commit('loginSuccess', user)
+              router.push('/dashboard')
+            }
+            else {
+              console.log(JSON.parse(localStorage.accountinfo).role)
+              commit('loginFailure')
+            }
+            // commit('loginSuccess', user)
+            // router.push('/dashboard')
             // this.$router.push('/dashboard')
           },
           error => {
