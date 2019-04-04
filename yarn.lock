@@ -7518,9 +7518,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-book@0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/vue-book/-/vue-book-0.0.15.tgz#55074097f63d83c21b224bed4ffeb354a1291557"
+vue-book@0.0.19:
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/vue-book/-/vue-book-0.0.19.tgz#22ece598d5d83ff2175996f399742e68e7b51b84"
 
 vue-bulma-expanding@0.0.1:
   version "0.0.1"
