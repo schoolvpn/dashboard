@@ -43,7 +43,7 @@
     "vue-chartjs": "^3.4.0",
     "vue-color": "^2.4.6",
     "vue-router": "^3.0.1",
-    "vue-slider-component": "2.7.6",
+    "vue-slider-component": "3.0.25",
     "vue-toasted": "^1.1.24",
     "vue-yandex-maps": "^0.7.9",
     "vue2-circle-progress": "^1.0.3",
